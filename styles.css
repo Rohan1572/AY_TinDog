@@ -52,13 +52,18 @@ h3 {
 }
 
 .title-image {
-  width: 60%;
+  width: 20%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
 }
 
 #features {
   font-family: "Montserrat", sans-serif;
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -69,6 +74,7 @@ h3 {
 p {
   color: #8f8f8f;
 }
+
 .icon {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -104,4 +110,26 @@ p {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+#pricing {
+  font-family: "Montserrat", sans-serif;
+  padding: 100px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
